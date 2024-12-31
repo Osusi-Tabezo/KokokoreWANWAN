@@ -409,9 +409,10 @@ class App:
 
             u, v = PLY_END_ANIM[ply_ani // 15 % 4]
             pyxel.text(16, 8, "RESULT", 7)
-            pyxel.text(16, 24, "MAX COMBO  " + str(max_combo), 7)
+            pyxel.text(16, 18, "POINT " + str(slash_point), 7)
+            pyxel.text(16, 26, "MAX COMBO  " + str(max_combo), 7)
             if max_combo == len(TREE):
-                pyxel.text(26, 32, "PERFECT!", 10)
+                pyxel.text(26, 34, "PERFECT!", 10)
 
             pyxel.blt(33, 60, 0, u, v, 16, 16, 0)
 
